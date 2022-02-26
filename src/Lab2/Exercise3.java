@@ -13,18 +13,23 @@ public class Exercise3 {
 		{
 			arr[i]=sc.nextInt();
 		}
-		int sortArr[] = getSorted(arr[]);
+		int sortArr[] = getSorted(arr);
 		System.out.println(sortArr);
 	}
 	public static int[] getSorted(int arr[])
 	{
+		StringBuilder input1 = new StringBuilder();
 		for(int i=0;i<arr.length;i++)
 		{
-			StringBuilder input1 = new StringBuilder();
 			input1.append(arr[i]);
-			input1.reverse();
+		}
+		input1.reverse();
+		
+		for(int i=0;i<arr.length;i++)
+		{
 			arr[i]=Integer.parseInt(input1.toString());	
 		}
+		
 		Arrays.sort(arr);
 		return arr;
 	}

@@ -2,8 +2,6 @@ package Lab5;
 
 import java.util.Scanner;
 
-import Lab3.InvalidAgeException;
-
 @SuppressWarnings("serial")
 class InvalidAgeException extends Exception
 {
